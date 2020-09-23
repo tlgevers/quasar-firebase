@@ -1,2 +1,2 @@
 service-account.json
-*firebase-auth.js
+fe/src/boot/firebase-auth.js
