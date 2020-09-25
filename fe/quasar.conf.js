@@ -74,11 +74,10 @@ module.exports = function (/* ctx */) {
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
     devServer: {
+      vueDevtools: true,
+      clientLogLevel: 'debug',
       https: false,
       port: 8080,
-      watchOptions: {
-        poll: 1000
-      },
       open: true // opens browser window automatically
     },
 
