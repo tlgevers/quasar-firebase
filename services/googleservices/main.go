@@ -6,9 +6,9 @@ import (
 	"log"
 	"net"
 
+	// cb "google.golang.org/api/cloudbilling/v1"
 	"google.golang.org/grpc"
 	pb "googleservices/pkg/cloudbilling"
-	// cb "google.golang.org/api/billingbudgets/v1beta1"
 )
 
 const (
@@ -17,6 +17,11 @@ const (
 
 // sayHello implements helloworld.GreeterServer.SayHello
 func getServices(ctx context.Context, in *pb.ServicesRequest) (*pb.ServicesResponse, error) {
+	// billingbudgetsService, err := cb.NewService(ctx)
+	// if err != nil {
+	// 	panic(err)
+	// }
+
 	log.Printf("Received: %v", in.GetName())
 	var names []*pb.Service
 	service := &pb.Service{
