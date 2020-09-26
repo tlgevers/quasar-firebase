@@ -73,6 +73,7 @@ module.exports = function (/* ctx */) {
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
+    // Add CORS support here
     devServer: {
       vueDevtools: true,
       clientLogLevel: 'debug',

@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "googleservices/cloudbilling";
+
+package cloudbilling;
+
+service CloudBilling {
+  rpc GetServices (ServicesRequest) returns (ServicesResponse) {}
+}
+
+message ServicesRequest {
+  string name = 1;
+}
+
+message Service {
+  string name = 1;
+}
+
+message ServicesResponse {
+  repeated Service names = 1;
+}
